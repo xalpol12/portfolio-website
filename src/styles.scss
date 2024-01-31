@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --background: #11111B;
+  --background-lighter: #181825;
+  --text: #CDD6F4;
+  --text-sub: #A6ADC8;
+  --accent: #A6E3A1;
+}
+
+body {
+  font-family: 'VT323', monospace;
+}
