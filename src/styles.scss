@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "bootstrap/dist/css/bootstrap.css";
 
 :root {
@@ -16,20 +17,23 @@
   padding: 0;
 }
 
-body {
+/* Reset font-family for Bootstrap elements */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+a,
+ul, ol, li,
+button {
   font-family: 'VT323', monospace;
+}
+
+body {
   font-size: var(--default-font-size);
   color: var(--default-text-color);
   background-color: var(--background);
 }
 
-h1 {
-  font-size: 2rem;
-}
 
-h2 {
-  font-size: 1.5rem;
-}
 
 @media screen and (min-width: 768px) {
   :root {
@@ -42,6 +46,3 @@ h2 {
     --default-font-size: 20px;
   }
 }
-
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';

@@ -1,37 +1,22 @@
 nav {
-  display: flex;
-  justify-content: left;
-  align-items: center;
   background-color: var(--background-lighter);
-}
-
-ul {
-  list-style-type: none;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
   &:hover {
     color: var(--accent);
   }
 }
 
-li {
-  display: inline;
-  a {
-    padding: 12px;
-  }
-}
-
 .title {
-  font-size: 1.5rem;
-  padding: 20px;
+  padding-right: 1rem;
 }
 
-.pages {
+.nav-link:focus{
+  color: var(--accent) !important;
 }
-
-.links {
-  justify-content: flex-end;
-}
+//.nav-link.click,
+//.nav-link.active {
+//  color: var(--accent) !important;
+//}

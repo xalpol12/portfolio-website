@@ -1,0 +1,15 @@
+svg {
+  fill: var(--text);
+}
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: cover;
+  transition: fill 0.3s;
+
+  &:hover {
+    fill: var(--accent);
+  }
+}
+

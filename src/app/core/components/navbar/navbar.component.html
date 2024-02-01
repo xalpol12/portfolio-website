@@ -1,17 +1,22 @@
-<nav>
-  <div class="title">Dawid Stawiszyński</div>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid d-inline-flex">
+<!--    <div class="d-lg-block d-none">-->
+      <div class="title">Dawid Stawiszyński</div>
 
-  <ul class="pages">
-    <li><a routerLink="#">Home</a></li>
-    <li><a routerLink="#">About</a></li>
-    <li><a routerLink="#">Experience</a></li>
-    <li><a routerLink="#">Projects</a></li>
-  </ul>
+<!--    </div>-->
 
-  <ul class="links">
-    <li><a>Linkedin</a></li>
-    <li><a>Mail</a></li>
-    <li><a>Github</a></li>
-  </ul>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item"><a class="nav-link" routerLink="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="#">About</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="#">Experience</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="#">Projects</a></li>
+    </ul>
+
+    <ul class="d-flex navbar-nav navbar-right pe-3">
+      <li><a class="nav-link" routerLink="#"><app-icon [iconName]="'linkedin'"></app-icon></a></li>
+      <li><a class="nav-link" routerLink="#"><app-icon [iconName]="'mail'"></app-icon></a></li>
+      <li><a class="nav-link" routerLink="#"><app-icon [iconName]="'github'"></app-icon> </a></li>
+    </ul>
+  </div>
 
 </nav>
