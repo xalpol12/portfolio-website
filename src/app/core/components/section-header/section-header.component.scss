@@ -1,0 +1,31 @@
+.section-header {
+  display: flex;
+  padding-bottom: 42px;
+  position: relative;
+
+  &:after{
+    background-color: var(--text);
+    content: "";
+    display: block;
+    height: 0.5px;
+    margin-left: 20px;
+    margin-top: 26px;
+    width: 100%;
+  }
+}
+
+.section-title {
+  color: var(--text);
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-header {
+    width: unset;
+  }
+
+  .section-header::after {
+    display: none;
+  }
+}

@@ -31,9 +31,10 @@ body {
   font-size: var(--default-font-size);
   color: var(--default-text-color);
   background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
-
-
 
 @media screen and (min-width: 768px) {
   :root {
