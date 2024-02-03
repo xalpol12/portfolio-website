@@ -1,22 +1,22 @@
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid d-inline-flex">
-<!--    <div class="d-lg-block d-none">-->
-      <div class="title">Dawid Stawiszyński</div>
+<nav class="navbar navbar-expand fixed-top p-0">
+  <div class="container-fluid">
+    <div class="navbar-brand ms-0">Dawid Stawiszyński</div>
 
-<!--    </div>-->
+    <div class="navbar-collapse collapse">
+      <div class="me-auto navbar-nav">
+        <a class="nav-link" routerLink="#">Home</a>
+        <a class="nav-link" routerLink="#">About</a>
+        <a class="nav-link" routerLink="#">Experience</a>
+        <a class="nav-link" routerLink="#">Projects</a>
+      </div>
 
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item"><a class="nav-link" routerLink="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="#">About</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="#">Experience</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="#">Projects</a></li>
-    </ul>
+      <div class="ms-auto navbar-nav">
+        <a class="nav-link" routerLink="#"><app-icon [iconName]="'linkedin'"></app-icon></a>
+        <a class="nav-link" routerLink="#"><app-icon [iconName]="'mail'"></app-icon></a>
+        <a class="nav-link" routerLink="#"><app-icon [iconName]="'github'"></app-icon></a>
+      </div>
 
-    <ul class="d-flex navbar-nav navbar-right pe-3">
-      <li><a class="nav-link" routerLink="#"><app-icon [iconName]="'linkedin'"></app-icon></a></li>
-      <li><a class="nav-link" routerLink="#"><app-icon [iconName]="'mail'"></app-icon></a></li>
-      <li><a class="nav-link" routerLink="#"><app-icon [iconName]="'github'"></app-icon> </a></li>
-    </ul>
+    </div>
   </div>
 
 </nav>

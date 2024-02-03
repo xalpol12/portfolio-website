@@ -9,14 +9,17 @@ a {
   }
 }
 
-.title {
-  padding-right: 1rem;
+.navbar-brand {
+  color: var(--text);
 }
 
 .nav-link:focus{
   color: var(--accent) !important;
 }
-//.nav-link.click,
-//.nav-link.active {
-//  color: var(--accent) !important;
-//}
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand,
+  .me-auto {
+    display: none;
+  }
+}
