@@ -4,12 +4,12 @@
 
 .typewriter p {
   overflow: hidden;
-  border-right: .15em solid var(--accent);
+  border-right: 1ch solid var(--accent);
   white-space: nowrap;
   margin: 0 auto 0 8px;
   letter-spacing: .01em;
   animation:
-    typing 1s steps(11, end),
+    typing 1.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 

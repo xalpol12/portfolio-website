@@ -28,6 +28,7 @@ export class ConsoleInitComponent implements OnInit {
       ? this.initCommand.switches.join(' ')
       : ' ';
     this.commandString = `${this.initCommand.command} ${switchesString} ${this.initCommand.argument}`;
+    console.log(this.commandString.length);
   }
 
   calculateDuration() {

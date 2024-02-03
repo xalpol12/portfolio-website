@@ -8,7 +8,7 @@
   --text: #CDD6F4;
   --text-sub: #A6ADC8;
   --accent: #A6E3A1;
-  --default-font-size: 16px;
+  --default-font-size: 20px;
 }
 
 * {
@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6,
 p,
 a,
 ul, ol, li,
+div,
 button {
   font-family: 'VT323', monospace;
 }
