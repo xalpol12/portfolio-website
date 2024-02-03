@@ -9,7 +9,6 @@
   --text-sub: #A6ADC8;
   --accent: #A6E3A1;
   --default-font-size: 16px;
-  --default-text-color: var(--text);
 }
 
 * {
@@ -29,7 +28,7 @@ button {
 
 body {
   font-size: var(--default-font-size);
-  color: var(--default-text-color);
+  color: var(--text);
   background-color: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

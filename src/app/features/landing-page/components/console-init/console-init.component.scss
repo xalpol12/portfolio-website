@@ -1,11 +1,15 @@
-.typewriter h1{
+.terminal-line {
+  display: flex;
+}
+
+.typewriter p {
   overflow: hidden;
   border-right: .15em solid var(--accent);
   white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
+  margin: 0 auto 0 8px;
+  letter-spacing: .01em;
   animation:
-    typing 3.5s steps(40, end),
+    typing 1s steps(11, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -17,4 +21,12 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: var(--accent); }
+}
+
+.terminal-username {
+  color: var(--accent);
+}
+
+.terminal-separator {
+  color: var(--text-sub);
 }
