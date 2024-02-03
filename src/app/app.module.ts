@@ -1,23 +1,25 @@
 import {NgModule} from "@angular/core";
 import {AppComponent} from "./app.component";
 import {BrowserModule} from "@angular/platform-browser";
-import {RouterModule, RouterOutlet} from "@angular/router";
+import {RouterModule} from "@angular/router";
 import {routes} from "./app.routes";
 import {NavbarComponent} from "./core/components/navbar/navbar.component";
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {SectionHeaderComponent} from "./core/components/section-header/section-header.component";
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {SharedModule} from "./shared/shared.module";
+import {LandingPageModule} from '@app/landing-page/landing-page.module';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
-    imports: [
-        BrowserModule,
-        RouterModule.forRoot(routes),
-        NavbarComponent,
-        NgbModule,
-        SectionHeaderComponent,
-    ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    NavbarComponent,
+    NgbModule,
+    SharedModule,
+    LandingPageModule,
+  ],
   exports: [
     RouterModule
   ],
