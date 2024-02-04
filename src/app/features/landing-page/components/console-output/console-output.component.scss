@@ -1,0 +1,10 @@
+.output-line {
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .output-line {
+    font-size: 12px;
+  }
+}

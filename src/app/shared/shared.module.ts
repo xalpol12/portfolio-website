@@ -8,12 +8,20 @@ import {SectionHeaderComponent} from "./components/section-header/section-header
 
 
 @NgModule({
-  declarations: [IconComponent, SectionHeaderComponent,
-    CliArgumentFormatPipe],
+  declarations: [
+    IconComponent,
+    SectionHeaderComponent,
+    CliArgumentFormatPipe,
+  ],
   imports: [
     CommonModule
   ],
-  exports: [CommonModule, FormsModule, IconComponent,
-    SectionHeaderComponent, CliArgumentFormatPipe]
+  exports: [
+    CommonModule,
+    FormsModule,
+    IconComponent,
+    SectionHeaderComponent,
+    CliArgumentFormatPipe
+  ]
 })
 export class SharedModule { }
