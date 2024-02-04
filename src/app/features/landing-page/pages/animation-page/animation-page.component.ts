@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-animation-page',
-  templateUrl: './animation-page.component.html',
-  styleUrl: './animation-page.component.scss'
+  template: `<app-console-init></app-console-init>
+  <app-console-output></app-console-output>`,
+  styles: '',
 })
 export class AnimationPageComponent {
 

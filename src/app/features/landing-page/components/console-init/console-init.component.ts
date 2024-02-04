@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ConsoleInput} from "@app/landing-page/models/console-input";
+import {initCommand} from "@app/landing-page/models/console-input";
 
 @Component({
   selector: 'app-console-init',
@@ -7,13 +7,6 @@ import {ConsoleInput} from "@app/landing-page/models/console-input";
   styleUrl: './console-init.component.scss',
 })
 export class ConsoleInitComponent implements OnInit {
-
-  initCommand: ConsoleInput = {
-    command: "java",
-    switches: ["-jar"],
-    argument: "PersonalWebsiteApplication.jar"
-  }
-
   CHARACTER_PER_SECOND_TYPING_SPEED = 6.5; // typing about 400 characters per minute, about 6.5 per second.
   commandString: string | undefined; //TODO: figure out a way to insert those values into animation css declaration
   duration: number | undefined;
@@ -24,10 +17,10 @@ export class ConsoleInitComponent implements OnInit {
   }
 
   initCommandString() {
-    const switchesString = this.initCommand.switches.length > 0
-      ? this.initCommand.switches.join(' ')
+    const switchesString = initCommand.switches.length > 0
+      ? initCommand.switches.join(' ')
       : ' ';
-    this.commandString = `${this.initCommand.command} ${switchesString} ${this.initCommand.argument}`;
+    this.commandString = `${initCommand.command} ${switchesString} ${initCommand.argument}`;
     console.log(this.commandString.length);
   }
 
