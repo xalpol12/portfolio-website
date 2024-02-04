@@ -9,7 +9,6 @@ export class CliArgumentFormatPipe implements PipeTransform {
     let words = value.toLowerCase().split(" ");
     let formattedValue = "--";
     formattedValue += words.at(0);
-    console.log(words.length);
     if (words.length > 1) {
       for (let i = 1; i < words.length; i++) {
         formattedValue += `-${words.at(i)}`;
