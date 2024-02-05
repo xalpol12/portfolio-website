@@ -7,4 +7,7 @@ import {Component, Input} from '@angular/core';
 })
 export class IconComponent {
   @Input() iconName: string | undefined;
+  @Input() iconColor: string = "var(--text)";
+  @Input() onHoverIconColor: string = "var(--accent)";
+  isHovered = false;
 }

@@ -1,11 +1,14 @@
-.nav-icon {
+.custom-icon {
   display: inline-block;
   width: 24px;
-  height: 24px;
-  background: var(--text);
+  height: 100%;
   mask-size: cover;
+}
 
-  &:hover {
-    background: var(--accent);
-  }
+.icon-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

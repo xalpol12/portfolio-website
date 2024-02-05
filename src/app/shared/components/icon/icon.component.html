@@ -1,1 +1,6 @@
-<svg class="nav-icon" [style.mask]="'url(./assets/icons/' + iconName + '.svg)'"></svg>
+<span class="icon-container" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
+  <svg class="custom-icon"
+       [style.mask]="'url(./assets/icons/' + iconName + '.svg)'"
+       [style.background]="isHovered ? onHoverIconColor : iconColor">
+  </svg>
+</span>

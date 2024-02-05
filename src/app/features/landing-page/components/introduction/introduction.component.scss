@@ -1,0 +1,29 @@
+@import 'src/app/features/landing-page/landing-page.component.scss';
+
+.intro-title, .intro-desc {
+  text-align: center;
+}
+
+.intro-desc {
+  text-align: center;
+  max-width: 600px;
+}
+
+.intro-contact {
+  align-self: center;
+  border: 1px solid var(--accent);
+  border-radius: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+a {
+  color: var(--accent);
+}
+
+.btn-outline-primary {
+  &:hover {
+    background-color: var(--background-lighter);
+    color: var(--accent);
+  }
+}
