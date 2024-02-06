@@ -11,9 +11,11 @@
 
 .intro-contact {
   align-self: center;
-  border: 1px solid var(--accent);
+  border: 3px solid var(--accent);
   border-radius: 0;
   margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
 }
 

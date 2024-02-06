@@ -7,6 +7,7 @@ import {NavbarComponent} from "./core/components/navbar/navbar.component";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from "./shared/shared.module";
 import {LandingPageModule} from '@app/landing-page/landing-page.module';
+import {AboutMeModule} from "./features/about-me/about-me.module";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {LandingPageModule} from '@app/landing-page/landing-page.module';
     NgbModule,
     SharedModule,
     LandingPageModule,
+    AboutMeModule,
   ],
   exports: [
     RouterModule

@@ -1,0 +1,38 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container div img {
+  display: block;
+  z-index: 1;
+}
+
+.image-container::before,
+.image-container::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: var(--accent);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.image-container::before {
+  top: -6px;
+  left: -6px;
+}
+
+.image-container:hover::before {
+  transform: translateY(calc(100% + 12px));
+}
+
+.image-container::after {
+  bottom: -6px;
+  right: -6px;
+}
+
+.image-container:hover::after {
+  transform: translateY(calc(-100% - 12px));
+}

@@ -4,6 +4,7 @@ import {FormsModule} from "@angular/forms";
 import {IconComponent} from "./components/icon/icon.component";
 import {CliArgumentFormatPipe} from "./pipes/cli-argument-format.pipe";
 import {SectionHeaderComponent} from "./components/section-header/section-header.component";
+import {FramedImageComponent} from "./components/framed-image/framed-image.component";
 
 
 
@@ -12,6 +13,7 @@ import {SectionHeaderComponent} from "./components/section-header/section-header
     IconComponent,
     SectionHeaderComponent,
     CliArgumentFormatPipe,
+    FramedImageComponent
   ],
   imports: [
     CommonModule
@@ -21,7 +23,8 @@ import {SectionHeaderComponent} from "./components/section-header/section-header
     FormsModule,
     IconComponent,
     SectionHeaderComponent,
-    CliArgumentFormatPipe
+    CliArgumentFormatPipe,
+    FramedImageComponent
   ]
 })
 export class SharedModule { }

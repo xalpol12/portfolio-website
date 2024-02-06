@@ -1,3 +1,3 @@
 <div class="section-header">
-  <span class="section-title">{{ sectionTitle! | cliArgumentFormat }}</span>
+  <span class="section-title" *ngIf="sectionTitle">{{ sectionTitle | cliArgumentFormat }}</span>
 </div>
