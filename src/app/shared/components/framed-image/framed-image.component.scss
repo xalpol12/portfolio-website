@@ -3,8 +3,9 @@
   display: inline-block;
 }
 
-.image-container div img {
+.image-container img {
   display: block;
+  max-width: 300px;
   z-index: 1;
 }
 
@@ -35,4 +36,16 @@
 
 .image-container:hover::after {
   transform: translateY(calc(-100% - 12px));
+}
+
+@media only screen and (max-width: 788px) {
+  .image-container img {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-container {
+    display: none;
+  }
 }

@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {AboutMeComponent} from "./about-me.component";
 import {SharedModule} from "../../shared/shared.module";
+import {TechnologiesItemizeComponent} from "./components/technologies-itemize/technologies-itemize.component";
 
 
 
 @NgModule({
-  declarations: [AboutMeComponent],
+  declarations: [
+    TechnologiesItemizeComponent,
+    AboutMeComponent,
+  ],
   exports: [
-    AboutMeComponent
+    AboutMeComponent,
   ],
   imports: [
     CommonModule,
