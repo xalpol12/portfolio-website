@@ -2,6 +2,14 @@ a {
   text-decoration: none;
 }
 
+#navbar {
+  padding-bottom: 100px;
+}
+
+.full-page {
+  min-height: 100vh;
+}
+
 app-about-me {
   max-width: 1000px;
 }
