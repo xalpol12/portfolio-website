@@ -9,6 +9,7 @@ import {SharedModule} from "./shared/shared.module";
 import {LandingPageModule} from '@app/landing-page/landing-page.module';
 import {AboutMeModule} from "./features/about-me/about-me.module";
 import {ExperienceModule} from "./features/experience/experience.module";
+import {ProjectsModule} from "./features/projects/projects.module";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {ExperienceModule} from "./features/experience/experience.module";
         LandingPageModule,
         AboutMeModule,
         ExperienceModule,
+        ProjectsModule,
     ],
   exports: [
     RouterModule
