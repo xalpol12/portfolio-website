@@ -8,17 +8,6 @@ button {
 .nav-pills .nav-link {
   color: var(--text);
   border-radius: 0;
-
-  &.active::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 1px;
-    height: 100%;
-    z-index: 1;
-    background-color: var(--accent);
-  }
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
