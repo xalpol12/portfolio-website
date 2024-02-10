@@ -7,7 +7,7 @@ a {
 }
 
 .content {
-  width: 100vw;
+  width: 98vw;
 }
 
 .full-page {
@@ -15,9 +15,13 @@ a {
   flex-direction: column;
   margin: auto;
   max-width: 1000px;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
-app-about-me {
-  max-width: 1000px;
+app-landing-page {
+  min-height: 100vh !important;
+}
+
+app-landing-page app-introduction-page {
+  //TODO: center app-introduction-page on the landing-page
 }
