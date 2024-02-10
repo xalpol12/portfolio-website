@@ -1,8 +1,9 @@
-button {
-  background-color: var(--background);
-  &::selection {
-    background-color: var(--background-lighter);
-  }
+.btn {
+  text-align: left;
+}
+
+.selected {
+  border-right: 3px solid var(--accent);
 }
 
 .nav-pills .nav-link {
