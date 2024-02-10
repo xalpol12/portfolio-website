@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import {ExperienceComponent} from "./experience.component";
 import {VerticalMultitabComponent} from "./components/vertical-multitab/vertical-multitab.component";
 import {SharedModule} from "../../shared/shared.module";
+import {TabPaneComponent} from "./components/vertical-multitab/tab-pane/tab-pane.component";
 
 
 
 @NgModule({
   declarations: [
     VerticalMultitabComponent,
-    ExperienceComponent
+    TabPaneComponent,
+    ExperienceComponent,
   ],
   exports: [
     ExperienceComponent
