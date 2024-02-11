@@ -25,9 +25,8 @@ export const projects: ProjectCardEntry[] = [
     frontDescription: "Soon to be completed.",
     backDescription: `This is a back description that I haven't provided yet.
     Here will be some other details in case front description is too long.`,
-    ghLink: "https://github.com/xalpol12/kuka-ar",
+    ghLink: "https://github.com/xalpol12/messenger-bot",
     outsideLink: "https://www.google.pl/",
-    ytLink: "https://youtu.be/biTEiVqRQYo",
   },
   {
     title: "Where to Eat",
@@ -36,6 +35,6 @@ export const projects: ProjectCardEntry[] = [
     based on phone's GPS sensor and Google Places API.`,
     backDescription: `This is a back description that I haven't provided yet.
     Here will be some other details in case front description is too long.`,
-    ghLink: "https://github.com/xalpol12/kuka-ar",
+    ghLink: "https://github.com/xalpol12/where-to-eat-android-app",
   },
 ]

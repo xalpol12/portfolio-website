@@ -1,27 +1,7 @@
-<!--<div class="card-grid" *ngFor="let project of projectEntries">-->
-
-<!--</div>-->
-
-<div class="card-grid">
-  <ul class="btn-outline-success">
-    hello
-  </ul>
-  <ul class="btn-outline-success">
-    hello
-  </ul>
-  <ul class="btn-outline-success">
-    hello
-  </ul>
-  <ul class="btn-outline-success">
-    hello
-  </ul>
-  <ul class="btn-outline-success">
-    hello
-  </ul>
-  <ul class="btn-outline-success">
-    hello
-  </ul>
-  <ul class="btn-outline-success">
-    hello
-  </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-3 project-card" *ngFor="let project of projectEntries">
+      <app-project-card [projectData]="project"></app-project-card>
+    </div>
+  </div>
 </div>

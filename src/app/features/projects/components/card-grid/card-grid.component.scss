@@ -1,9 +1,14 @@
-.card-grid {
-  display: grid;
-  grid-gap: 10px;
-  //grid-template-columns: repeat(3, minmax(300px,1fr));
+.project-card {
+  //transition: transform 0.3s ease;
+  //
+  //&:hover {
+  //  transform: translateY(-6px);
+  //}
 }
 
-@media (max-width: 1080px) {
-  //grid-template-columns: repeat(3, minmax(300px,1fr));
+@media (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

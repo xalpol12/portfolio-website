@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {ProjectCardEntry} from "../../../models/project-card-entry";
+import {TechStackFormatPipe} from "../../../../../shared/pipes/tech-stack-format.pipe";
 
 @Component({
   selector: 'app-project-card',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './project-card.component.scss'
 })
 export class ProjectCardComponent {
-
+  @Input() projectData: ProjectCardEntry | undefined;
 }

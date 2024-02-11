@@ -5,6 +5,7 @@ import {IconComponent} from "./components/icon/icon.component";
 import {CliArgumentFormatPipe} from "./pipes/cli-argument-format.pipe";
 import {SectionHeaderComponent} from "./components/section-header/section-header.component";
 import {FramedImageComponent} from "./components/framed-image/framed-image.component";
+import {TechStackFormatPipe} from "./pipes/tech-stack-format.pipe";
 
 
 
@@ -13,7 +14,8 @@ import {FramedImageComponent} from "./components/framed-image/framed-image.compo
     IconComponent,
     SectionHeaderComponent,
     CliArgumentFormatPipe,
-    FramedImageComponent
+    TechStackFormatPipe,
+    FramedImageComponent,
   ],
   imports: [
     CommonModule
@@ -24,7 +26,8 @@ import {FramedImageComponent} from "./components/framed-image/framed-image.compo
     IconComponent,
     SectionHeaderComponent,
     CliArgumentFormatPipe,
-    FramedImageComponent
+    FramedImageComponent,
+    TechStackFormatPipe
   ]
 })
 export class SharedModule { }

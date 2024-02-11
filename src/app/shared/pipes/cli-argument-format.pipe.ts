@@ -1,14 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({
-  name: 'cliArgumentFormat',
-})
 /**
  * formats passed space-separated string sentence
  * in style of command line argument, appending
  * "--" double dash symbol at the beginning
  * and joining each sentence by "-" symbol
  */
+@Pipe({
+  name: 'cliArgumentFormat',
+})
 export class CliArgumentFormatPipe implements PipeTransform {
 
   transform(value: string): string {
