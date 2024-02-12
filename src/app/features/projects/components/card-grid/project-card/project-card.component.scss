@@ -38,6 +38,19 @@
   margin-left: 8px;
 }
 
+.card-body {
+  font-size: calc(var(--default-font-size) - 2px);
+  height: 200px;
+}
+
+//TODO: fix jumping between two description sides
+@media (max-width: 992px) {
+  .card-body {
+    height: auto;
+  }
+}
+
+
 .btn, button {
   color: var(--text) !important;
   border-radius: 0 !important;

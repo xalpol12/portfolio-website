@@ -9,4 +9,9 @@ import {TechStackFormatPipe} from "../../../../../shared/pipes/tech-stack-format
 })
 export class ProjectCardComponent {
   @Input() projectData: ProjectCardEntry | undefined;
+  isFlipped: boolean = false;
+
+  flipCard() {
+    this.isFlipped = !this.isFlipped;
+  }
 }
