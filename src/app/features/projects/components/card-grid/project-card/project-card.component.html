@@ -3,9 +3,15 @@
     <div class="title">
       {{projectData?.title}}
     </div>
-    <div class="links">
+    <div class="links d-flex flex-row">
+      <a *ngIf="projectData?.ytLink" href="{{projectData?.ytLink}}" target="_blank">
+        <app-icon [iconName]="'yt-link'"></app-icon>
+      </a>
+      <a *ngIf="projectData?.outsideLink" href="{{projectData?.outsideLink}}" target="_blank" >
+        <app-icon [iconName]="'external-link'"></app-icon>
+      </a>
       <a *ngIf="projectData?.ghLink" href="{{projectData?.ghLink}}" target="_blank">
-        <app-icon [iconName]="'github'" [iconColor]="'var(--accent)'"></app-icon>
+        <app-icon [iconName]="'github'"></app-icon>
       </a>
     </div>
   </div>

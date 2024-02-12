@@ -26,6 +26,7 @@ export const projects: ProjectCardEntry[] = [
     backDescription: `This is a back description that I haven't provided yet.
     Here will be some other details in case front description is too long.`,
     ghLink: "https://github.com/xalpol12/messenger-bot",
+    ytLink: "https://www.youtube.com/watch?v=qU8UfYdKHvs",
     outsideLink: "https://www.google.pl/",
   },
   {
