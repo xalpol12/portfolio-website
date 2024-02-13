@@ -24,9 +24,13 @@ pre.output-line {
   }
 }
 
+app-animation-page {
+  padding-top: 3rem;
+}
+
 .landing-page {
   min-height: 100vh !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto 1fr;
 }
