@@ -10,6 +10,7 @@ import {LandingPageModule} from '@app/landing-page/landing-page.module';
 import {AboutMeModule} from "./features/about-me/about-me.module";
 import {ExperienceModule} from "./features/experience/experience.module";
 import {ProjectsModule} from "./features/projects/projects.module";
+import {FooterComponent} from "./core/components/footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {ProjectsModule} from "./features/projects/projects.module";
         AboutMeModule,
         ExperienceModule,
         ProjectsModule,
+        FooterComponent,
     ],
   exports: [
     RouterModule

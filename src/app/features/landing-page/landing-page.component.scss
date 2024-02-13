@@ -23,3 +23,10 @@ pre.output-line {
     display: none;
   }
 }
+
+.landing-page {
+  min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

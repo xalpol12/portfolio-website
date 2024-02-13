@@ -10,18 +10,6 @@ a {
   width: 98vw;
 }
 
-.full-page {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  max-width: 1000px;
-  min-height: 50vh;
-}
-
-app-landing-page {
-  min-height: 100vh !important;
-}
-
-app-landing-page app-introduction-page {
-  //TODO: center app-introduction-page on the landing-page
+div > app-about-me {
+  margin-bottom: 200px;
 }
