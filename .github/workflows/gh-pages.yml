@@ -56,7 +56,6 @@ jobs:
     - name: Ng build
       run: npm run build
 
-  deploy:
     - name: Conventional Changelog Action
       id: changelog
       uses: TriPSs/conventional-changelog-action@v3
