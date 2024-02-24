@@ -61,12 +61,11 @@
 #        publish_dir: dist/browser/portfolio-website
 #        enable_jekyll: true
 
-name: Angular Build and Deploy
+name: Github Pages Deploy
 
 on:
   push:
-    branches:
-      - ["main", "deploy-pipeline"]
+    branches: ["main", "deploy-pipeline"]
 jobs:
   build:
     runs-on: ubuntu-latest
