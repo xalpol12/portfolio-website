@@ -85,6 +85,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: portfolio-website/dist/browser
-          branch: main
+          folder: .
+          branch: deploy-pipeline
           token: ${{ secrets.ACTIONS_SECRET }}
