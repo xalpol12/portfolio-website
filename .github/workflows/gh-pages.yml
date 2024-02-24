@@ -38,6 +38,13 @@ jobs:
     - name: Ng build
       run: npm run build
 
+    - name: Deploy to gh-pages
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.ACTIONS_SECRET }}
+        publish_dir: ./dist/browser/portfolio-website
+        enable_jekyll: true
 
 #  deploy:
 #    environment:
@@ -72,13 +79,6 @@ jobs:
 #    - name: Build
 #      run: npm run build
 #
-#    - name: Deploy
-#      if: success()
-#      uses: peaceiris/actions-gh-pages@v3
-#      with:
-#        github_token: ${{ secrets.ACTIONS_SECRET }}
-#        publish_dir: dist/browser/portfolio-website
-#        enable_jekyll: true
 
 
 
