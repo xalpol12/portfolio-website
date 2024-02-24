@@ -32,84 +32,48 @@ jobs:
       with:
         node-version: 20
 
+    - name: Cache node modules
+      id: cache-nodemodules
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-node-modules
+      with:
+        # caching node_modules
+        path: node_modules # path for node_modules folder
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        #  name of the chache key includes package-lock.json
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+
     - name: Install modules
+      if:
+        steps.cache-nodemodules.outputs.cache-hit != 'true'
+        # if cache hits the skip this step.
       run: npm ci
 
     - name: Ng build
       run: npm run build
 
-    - name: Deploy to gh-pages
-      if: success()
-      uses: peaceiris/actions-gh-pages@v3
+  deploy:
+    - name: Conventional Changelog Action
+      id: changelog
+      uses: TriPSs/conventional-changelog-action@v3
       with:
-        github_token: ${{ secrets.ACTIONS_SECRET }}
-        publish_dir: ./dist/browser/portfolio-website
-        enable_jekyll: true
+        github-token: ${{ secrets.ACTIONS_SECRET }}
+        output-file: "false"
 
-#  deploy:
-#    environment:
-#      name: github-pages
-#      url: ${{ steps.deployment.outputs.page_url }}
-#    runs-on: ubuntu-latest
-#    steps:
-#    - name: Checkout
-#      uses: actions/checkout@v4
-#
-#    - name: Cache Node Modules
-#      id: cache-npm
-#      uses: actions/cache@v3
-#      env:
-#        cache-name: cache-node-modules
-#      with:
-#        path: ~/.npm
-#        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-#        restore-keys: |
-#          ${{ runner.os }}-build-${{ env.cache-name }}-
-#          ${{ runner.os }}-build-
-#          ${{ runner.os }}-
-#    - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
-#      name: List the state of node modules
-#      continue-on-error: true
-#      run: npm list
-#
-#
-#    - name: Install Dependencies
-#      run: npm install
-#
-#    - name: Build
-#      run: npm run build
-#
+    - name: Create Release
+      uses: actions/create-release@v1
+      if: ${{ steps.changelog.outputs.skipped == 'false' }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACTIONS_SECRET }}
+      with:
+        tag_name: ${{ steps.changelog.outputs.tag }}
+        release_name: ${{ steps.changelog.outputs.tag }}
+        body: ${{ steps.changelog.outputs.clean_changelog }}
 
-
-
-
-
-
-
-        #name: Github Pages Deploy
-        #
-        #on:
-        #  push:
-        #    branches: ["main", "deploy-pipeline"]
-        #jobs:
-        #  build:
-        #    runs-on: ubuntu-latest
-        #    steps:
-        #      - name: Checkout code
-        #        uses: actions/checkout@v2
-        #
-        #      - name: Set up Node.js
-        #        uses: actions/setup-node@v3
-        #        with:
-        #          node-version: 20
-        #
-        #      - name: Build Angular app to prod
-        #        working-directory: .
-        #        run: npm install && npm run build
-        #
-        #      - name: Deploy to GitHub Pages
-        #        uses: JamesIves/github-pages-deploy-action@v4
-        #        with:
-        #          folder: .
-        #          branch: deploy-pipeline
-        #          token: ${{ secrets.ACTIONS_SECRET }}
+    - name: Deploy
+      run: |
+        npm run deploy
