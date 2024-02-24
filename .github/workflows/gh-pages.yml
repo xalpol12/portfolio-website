@@ -53,9 +53,6 @@ jobs:
         # if cache hits the skip this step.
       run: npm ci
 
-    - name: Ng build
-      run: npm run build
-
     - name: Conventional Changelog Action
       id: changelog
       uses: TriPSs/conventional-changelog-action@v3
