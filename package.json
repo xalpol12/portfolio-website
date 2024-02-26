@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build -c production --base-href /portfolio-website/",
+    "build": "ng build -c production --base-href /portfolio-website",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy"
+    "deploy": "ng deploy --base-href /portfolio-website"
   },
   "private": true,
   "dependencies": {
