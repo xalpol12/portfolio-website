@@ -7,7 +7,7 @@
     "build": "ng build -c production --base-href /portfolio-website",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href /portfolio-website"
+    "deploy": "ng deploy --base-href=https://xalpol12.github.io/portfolio-website/"
   },
   "private": true,
   "dependencies": {
