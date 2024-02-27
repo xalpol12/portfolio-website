@@ -18,3 +18,12 @@ a {
 app-framed-image {
   padding-right: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .about-me-desc {
+    width: 100%;
+    margin: auto;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+}

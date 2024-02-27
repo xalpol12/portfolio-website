@@ -11,6 +11,7 @@
   --default-font-size: 20px;
 }
 
+/* overwrite default Bootstrap margin settings */
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +40,6 @@ body {
 
 @media only screen and (max-width: 600px) {
   :root {
-    --default-font-size: 16px;
+    --default-font-size: 18px;
   }
 }
