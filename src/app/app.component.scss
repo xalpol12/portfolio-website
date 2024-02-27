@@ -7,18 +7,17 @@ a {
 }
 
 .content {
-  //width: 98vw;
   width: 100%;
-  max-width: 1000px; /* Limiting the width of full-page sections */
+  max-width: 1000px;
   margin: auto;
 }
 
 .full-page {
   width: 100%;
-  max-width: 1000px; /* Limiting the width of full-page sections */
-  margin: auto; /* Centering the sections */
-  padding: 20px; /* Adding padding for spacing */
-  box-sizing: border-box; /* Include padding in width calculation */
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 div > app-about-me {
