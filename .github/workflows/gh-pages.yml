@@ -2,7 +2,7 @@ name: gh-pages deploy
 
 on:
   push:
-    branches: ["main", "deploy-pipeline"]
+    branches: ["main"]
 
 
   workflow_dispatch:
