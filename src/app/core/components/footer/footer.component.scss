@@ -1,3 +1,10 @@
 p {
   font-size: calc(var(--default-font-size) - 4px);
 }
+a {
+  text-decoration: none;
+  color: var(--text);
+  &:hover {
+    color: var(--accent);
+  }
+}
