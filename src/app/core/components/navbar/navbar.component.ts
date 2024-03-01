@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {RouterLink} from "@angular/router";
+import {Component} from '@angular/core';
+import {RouterLink, RouterLinkActive} from "@angular/router";
 import {SharedModule} from "../../../shared/shared.module";
 
 @Component({
@@ -7,11 +7,11 @@ import {SharedModule} from "../../../shared/shared.module";
   standalone: true,
   imports: [
     RouterLink,
-    SharedModule
+    SharedModule,
+    RouterLinkActive,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-
 }

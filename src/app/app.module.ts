@@ -1,7 +1,7 @@
 import {NgModule} from "@angular/core";
 import {AppComponent} from "./app.component";
 import {BrowserModule} from "@angular/platform-browser";
-import {RouterModule} from "@angular/router";
+import {RouterModule, Scroll} from "@angular/router";
 import {routes} from "./app.routes";
 import {NavbarComponent} from "./core/components/navbar/navbar.component";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -11,6 +11,7 @@ import {AboutMeModule} from "./features/about-me/about-me.module";
 import {ExperienceModule} from "./features/experience/experience.module";
 import {ProjectsModule} from "./features/projects/projects.module";
 import {FooterComponent} from "./core/components/footer/footer.component";
+
 
 @NgModule({
   declarations: [
