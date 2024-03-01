@@ -23,17 +23,17 @@ export const projects: ProjectCardEntry[] = [
   {
     title: "Messenger Bot (Fullstack)",
     techStack: ["Java + Spring", "Typescript + Angular", "Docker"],
-    frontDescription: "Soon to be completed.",
-    backDescription: `Completion level: 80% - implementing frontend`,
+    frontDescription: "[Work in progress] Service for scheduling and sending messages using Messenger API.",
+    backDescription: `Completion level: 80% - implementing frontend.
+    Backend service that periodically checks database for messages scheduled by a fanpage admin`,
     ghLink: "https://github.com/xalpol12/messenger-bot",
-    ytLink: "https://www.youtube.com/watch?v=qU8UfYdKHvs",
+    // ytLink: "https://www.youtube.com/watch?v=qU8UfYdKHvs",
     // outsideLink: "https://www.google.pl/",
   },
   {
     title: "Where to Eat (Fullstack)",
     techStack: ["Java + Spring", "Android app"],
-    frontDescription: `Android app that recommends user a list of restaurants in specified proximity, based on their location
-    based on and Google Places API.`,
+    frontDescription: `Android app that recommends user a list of restaurants in specified proximity, based on their location.`,
     backDescription: `Spring backend server acting as a wrapper for Google Places API.
     DI library (Hilt + Dagger) with Room database for an Android app. Mobile app uses measurements
     from phone's GPS sensor.`,
