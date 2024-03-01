@@ -1,7 +1,7 @@
 import {NgModule} from "@angular/core";
 import {AppComponent} from "./app.component";
 import {BrowserModule} from "@angular/platform-browser";
-import {RouterModule, Scroll} from "@angular/router";
+import {RouterModule} from "@angular/router";
 import {routes} from "./app.routes";
 import {NavbarComponent} from "./core/components/navbar/navbar.component";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
