@@ -43,7 +43,7 @@ export const projects: ProjectCardEntry[] = [
     title: "Portfolio Website (Frontend)",
     techStack: ["Typescript + Angular"],
     frontDescription: `SPA that aims to present information and list
-    the best projects in a coherent way. `,
+    my best personal projects in a coherent way. `,
     backDescription: `Leveraging ng-bootstrap library and catppuccin color scheme with retro
     terminal aesthetic to visualize my areas of interest. Modular project structure that promotes
     expandability.`,
