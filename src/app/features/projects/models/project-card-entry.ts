@@ -25,10 +25,8 @@ export const projects: ProjectCardEntry[] = [
     techStack: ["Java + Spring", "Typescript + Angular", "Docker"],
     frontDescription: "[Work in progress] Service for scheduling and sending messages using Messenger API.",
     backDescription: `Completion level: 80% - implementing frontend.
-    Backend service that periodically checks database for messages scheduled by a fanpage admin`,
+    Backend service that periodically checks database for messages scheduled by a fanpage admin.`,
     ghLink: "https://github.com/xalpol12/messenger-bot",
-    // ytLink: "https://www.youtube.com/watch?v=qU8UfYdKHvs",
-    // outsideLink: "https://www.google.pl/",
   },
   {
     title: "Where to Eat (Fullstack)",
