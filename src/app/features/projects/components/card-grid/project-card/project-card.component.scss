@@ -26,6 +26,10 @@
 
 .title {
   font-size: calc(var(--default-font-size) + 4px);
+
+  &.hovered {
+    color: var(--accent) !important;
+  }
 }
 
 .tech-stack {

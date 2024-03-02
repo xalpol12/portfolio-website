@@ -7,5 +7,4 @@ import {Component, Input} from '@angular/core';
 })
 export class SectionHeaderComponent {
   @Input() sectionTitle: string | undefined;
-  @Input() topMarginValue: string = '100px'; // defaults to 100px
 }

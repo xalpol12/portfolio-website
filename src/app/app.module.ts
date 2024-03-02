@@ -12,6 +12,7 @@ import {ExperienceModule} from "./features/experience/experience.module";
 import {ProjectsModule} from "./features/projects/projects.module";
 import {FooterComponent} from "./core/components/footer/footer.component";
 
+
 @NgModule({
   declarations: [
     AppComponent,

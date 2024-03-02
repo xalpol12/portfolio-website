@@ -9,9 +9,10 @@ import {TechStackFormatPipe} from "../../../../../shared/pipes/tech-stack-format
 })
 export class ProjectCardComponent {
   @Input() projectData: ProjectCardEntry | undefined;
-  isFlipped: boolean = false;
+  hovered: boolean = false;
+  flipped: boolean = false;
 
   flipCard() {
-    this.isFlipped = !this.isFlipped;
+    this.flipped = !this.flipped;
   }
 }

@@ -14,7 +14,8 @@ a {
 }
 
 .nav-link:focus{
-  color: var(--accent) !important;
+  color: inherit;
+  //color: var(--text) !important; //TODO: add scrollspy
 }
 
 @media only screen and (max-width: 600px) {
