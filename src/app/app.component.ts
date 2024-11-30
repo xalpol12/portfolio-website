@@ -4,7 +4,16 @@ import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+    <app-navbar></app-navbar>
+    <div class="content">
+      <app-landing-page id="home" class="full-page"></app-landing-page>
+      <app-about-me id="about" class="full-page"></app-about-me>
+      <app-experience id="experience" class="full-page"></app-experience>
+      <app-projects id="projects" class="full-page"></app-projects>
+    </div>
+    <app-footer></app-footer>
+  `,
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {

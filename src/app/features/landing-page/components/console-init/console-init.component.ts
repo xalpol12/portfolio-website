@@ -3,7 +3,19 @@ import {initCommand} from "@app/landing-page/models/console-input";
 
 @Component({
   selector: 'app-console-init',
-  templateUrl: './console-init.component.html',
+  template: `
+    <div class="terminal-line">
+      <span class="terminal-username">root&#64;xalpol12</span>
+      <span>:</span>
+      <span class="terminal-separator">~</span>
+      <span>$ </span>
+      <div>
+    <span class="typewriter">
+      <p>{{commandString}}</p>
+    </span>
+      </div>
+    </div>
+  `,
   styleUrl: './console-init.component.scss',
 })
 export class ConsoleInitComponent implements OnInit {
