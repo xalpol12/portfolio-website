@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-card-grid-page',
-  templateUrl: './card-grid-page.component.html',
-  styleUrl: './card-grid-page.component.scss'
+  template: `
+    <app-card-grid></app-card-grid>
+  `
 })
 export class CardGridPageComponent {
 
